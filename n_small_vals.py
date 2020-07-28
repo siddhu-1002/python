@@ -1,12 +1,14 @@
-#Program to find index of n smallest values using [Find index Remove element Find index Algorithm]
+# Taking input from user about how many values to be added into list
+m = int(input("How many elements do you want to add to your list : "))
+# Created an empty list to add the input input values from the user
+numbers = []
+for term in range(1,m+1):
+    element = int(input("Enter the element of the list : "))
+    numbers.append(element)
+dup_num = numbers.copy()
+
 # Taking input from user about how many minimum values to be printed
 n = int(input("How many small values do you want to print : "))
-"""
-    Created original list named 'count'
-    Created a copy of original list as 'counts'
-"""
-numbers = [809, 834, 67, 478, 307, 100, 122, 123, 324, 476]
-dup_num = numbers.copy()
 
 
 for i in range(1, n+1):
