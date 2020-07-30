@@ -17,15 +17,18 @@ def linear_search(lst, value):
     for i in range(len(lst)):
         if lst[i] == value:
             return i
-    return -1
+    else:
+        print('Not Found!!!!!')
+        return -1
 
 
 lst = [1,21,5,3,1,2,4,5,6,4]
+element = int(input("Which element do you want to search : "))
 
 """
     The return value of the function gets stored in variable 'j'.
-    Finally we get the output as the index value of 1.
+    Finally we get the output as the index value of element.
 """
 
-j = linear_search(lst, 1)
+j = linear_search(lst, element)
 print(j)
