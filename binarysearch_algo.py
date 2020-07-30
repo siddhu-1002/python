@@ -1,3 +1,5 @@
+# Program for binary searching algorithm through list
+
 def binary_search(list,v):
     l = 0
     u = len(list) - 1
@@ -12,5 +14,6 @@ def binary_search(list,v):
         print("Value found at : ", l)
     else:
         print("Value not found")
-
-binary_search([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16], 54)
+ls = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+element = int(input("Which element do you want to search : "))
+binary_search(ls, element)
